@@ -1,37 +1,45 @@
 /* Base styles for the entire page */
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #2c3e50, #4ca1af);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #fff;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #fff;
+}
+
+/* Container for centering content */
+.container {
+  text-align: center;
+  padding: 40px; /* increased padding for a larger container */
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Title styling */
+h1 {
+  font-size: 3em; /* increased font size */
+  margin-bottom: 0.5em;
+  color: #ddd;
+}
+
+/* Styling for the daily word */
+.word {
+  font-size: 4em; /* increased font size */
+  font-weight: bold;
+  color: #00aaff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Mobile devices: position content at the top */
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: flex-start; /* aligns content to the top */
+    padding-top: 20px;
+    height: auto; /* allow height to adjust */
   }
-  
-  /* Container for centering content */
-  .container {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.75);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Title styling */
-  h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    color: #ddd;
-  }
-  
-  /* Styling for the daily word */
-  .word {
-    font-size: 3em;
-    font-weight: bold;
-    color: #00aaff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
+}
