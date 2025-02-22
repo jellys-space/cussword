@@ -7,6 +7,7 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  background-size: cover;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #fff;
   font-size: 1.2em;
@@ -40,19 +41,20 @@ h1 {
 /* Mobile adjustments */
 @media only screen and (max-width: 600px) {
   body {
-    justify-content: flex-start; /* Positions content at the top */
-    align-items: center;         /* Keeps horizontal centering */
-    padding-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
     min-height: auto;
   }
   .container {
-    width: 90%;
-    padding: 30px;
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
   }
   h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .word {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 }
