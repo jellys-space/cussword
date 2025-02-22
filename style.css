@@ -1,4 +1,4 @@
-/* Base styles for the entire page */
+/* Global styles for the entire page (desktop) */
 body {
   margin: 0;
   height: 100vh;
@@ -8,12 +8,13 @@ body {
   background: linear-gradient(135deg, #2c3e50, #4ca1af);
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #fff;
+  font-size: 1.2em; /* Base font scaling */
 }
 
 /* Container for centering content */
 .container {
   text-align: center;
-  padding: 40px; /* increased padding for a larger container */
+  padding: 60px;
   background: rgba(0, 0, 0, 0.75);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -21,25 +22,35 @@ body {
 
 /* Title styling */
 h1 {
-  font-size: 3em; /* increased font size */
+  font-size: 3.5em;
   margin-bottom: 0.5em;
   color: #ddd;
 }
 
 /* Styling for the daily word */
 .word {
-  font-size: 4em; /* increased font size */
+  font-size: 4.5em;
   font-weight: bold;
   color: #00aaff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* Mobile devices: position content at the top */
+/* Mobile adjustments: position content at the top and scale sizes down slightly */
 @media only screen and (max-width: 600px) {
   body {
-    align-items: flex-start; /* aligns content to the top */
+    align-items: flex-start; /* positions content at the top */
     padding-top: 20px;
-    height: auto; /* allow height to adjust */
+    height: auto;
+  }
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .word {
+    font-size: 3.5em;
   }
 }
