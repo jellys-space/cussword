@@ -10,13 +10,12 @@ body {
   background-size: cover;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #fff;
-  font-size: 1.2em;
 }
 
 /* Container for centered content */
 .container {
   text-align: center;
-  padding: 60px;
+  padding: 40px;
   background: rgba(0, 0, 0, 0.75);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -24,37 +23,34 @@ body {
 
 /* Title styling */
 h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin-bottom: 0.5em;
   color: #ddd;
 }
 
 /* Daily word styling */
 .word {
-  font-size: 4.5em;
+  font-size: 3em;
   font-weight: bold;
   color: #00aaff;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-/* Mobile adjustments */
+/* Mobile adjustments for screens up to 600px wide */
 @media only screen and (max-width: 600px) {
   body {
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
-    min-height: auto;
+    justify-content: flex-start; /* Position content at the top */
+    padding-top: 20px;
   }
   .container {
-    width: 100%;
-    max-width: 90%;
+    width: 90%;
     padding: 20px;
   }
   h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .word {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
