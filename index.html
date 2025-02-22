@@ -4,29 +4,6 @@
   <meta charset="UTF-8">
   <title>Today's Cuss Word</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: #323232;
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      text-align: center;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-    .word {
-      font-size: 3em;
-      font-weight: bold;
-      color: #cf0f0f;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -40,7 +17,7 @@
     // Get today's date
     const today = new Date();
     // For a continuous cycle, calculate the number of days passed since a fixed start date.
-    // For example, January 1, 2023:
+    // For example, February 22, 2025:
     const startDate = new Date('2025-02-22');
     const diffTime = today - startDate;
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
