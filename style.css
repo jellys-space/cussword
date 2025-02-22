@@ -1,17 +1,18 @@
-/* Global styles for the entire page (desktop) */
+/* Global styles for desktop */
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #2c3e50, #4ca1af);
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #fff;
-  font-size: 1.2em; /* Base font scaling */
+  font-size: 1.2em;
 }
 
-/* Container for centering content */
+/* Container for centered content */
 .container {
   text-align: center;
   padding: 60px;
@@ -27,7 +28,7 @@ h1 {
   color: #ddd;
 }
 
-/* Styling for the daily word */
+/* Daily word styling */
 .word {
   font-size: 4.5em;
   font-weight: bold;
@@ -36,12 +37,13 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Mobile adjustments: position content at the top and scale sizes down slightly */
+/* Mobile adjustments */
 @media only screen and (max-width: 600px) {
   body {
-    align-items: flex-start; /* positions content at the top */
+    justify-content: flex-start; /* Positions content at the top */
+    align-items: center;         /* Keeps horizontal centering */
     padding-top: 20px;
-    height: auto;
+    min-height: auto;
   }
   .container {
     width: 90%;
