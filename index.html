@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Today's Cuss Word</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    .word {
+      font-size: 3em;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Today's cuss word is:</h1>
+    <div class="word" id="cuss-word"></div>
+  </div>
+  <script>
+    // Define your list of words
+    const words = ['pissaster', 'asspocalypse', 'dickastrophe', 'cuntaclysm', 'fartmageddon', 'pussymaniasaurus', 'cockwomble', 'fluxelcockery', 'bollocknese', 'dickachu', 'whimsyfuckeldoodle-do', 'shitnado', 'cockborough', 'fucktoville', 'fannyfiasco', 'cocknado', 'peckerstorm', 'assplosion', 'fuckabazoo', 'fannyfizzbang', 'pissaroni', 'shitabulous', 'cunt-tickleroo', 'assgoblinzoid', 'pussygooneroo', 'fuckflapper', 'dickshnozzle', 'twinklefuck', 'ratfucker', 'skibidifuck', 'supreme-fuckery', 'fuckleberry', 'fucktacular', 'fuckmeister', 'fuckquaintance', 'fuckquisition', 'dicknosis', 'fuckilaniosaurus', 'fucktation', 'fuckerysmith', 'fuckinated-shit', 'fuckening', 'fucking-fuckle-knuckle', 'fuckthology', 'fucktagon', 'fuckelibrium', 'fuckopotamus', 'fuckadoodledoo', 'whimsifluxicocklefuckery', 'royal-fuckination', 'chucklefuck', 'noodlefucker', 'fucktangular', 'knucklefucker', 'twisty-mcfucknuts', 'sloppityfuckity', 'snugglemcfuckle', 'zoomzappyfuck', 'wobblefuckington', 'dinglefuckery', 'anthropomorfuckery', 'fuckmaster5000', 'fuckaroni-and-cheese', 'fuckatron9000', 'hydrofuckingshit', 'fucktropolis', 'fuckimon', 'fucknoculars', 'holyfuckamole'];
+
+    // Get today's date
+    const today = new Date();
+    // For a continuous cycle, calculate the number of days passed since a fixed start date.
+    // For example, January 1, 2023:
+    const startDate = new Date('2023-01-01');
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+    // Calculate the index of the current word
+    const wordIndex = diffDays % words.length;
+
+    // Display the current word
+    document.getElementById('cuss-word').innerText = words[wordIndex];
+  </script>
+</body>
+</html>
