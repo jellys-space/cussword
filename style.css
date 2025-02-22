@@ -1,56 +1,56 @@
 /* Global styles for desktop */
 body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #2c3e50, #4ca1af);
-  background-size: cover;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #fff;
-}
-
-/* Container for centered content */
-.container {
-  text-align: center;
-  padding: 50px;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
-
-/* Title styling */
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-  color: #ddd;
-}
-
-/* Daily word styling */
-.word {
-  font-size: 3.5em;
-  font-weight: bold;
-  color: #00aaff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Mobile adjustments for screens up to 600px wide */
-@media only screen and (max-width: 600px) {
-  body {
-    justify-content: flex-start; /* Position content at the top */
-    padding-top: 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    background-size: cover;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
   }
+  
+  /* Container for centered content */
   .container {
-    width: 90%;
-    padding: 15px;
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   }
+  
+  /* Title styling */
   h1 {
-    font-size: 1.6em;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #ddd;
   }
+  
+  /* Daily word styling */
   .word {
-    font-size: 1.8em;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ff1e00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
-}
+  
+  /* Mobile adjustments for screens up to 600px wide */
+  @media only screen and (max-width: 600px) {
+    body {
+      justify-content: flex-start; /* Position content at the top */
+      padding-top: 20px;
+    }
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+    h1 {
+      font-size: 1.6em;
+    }
+    .word {
+      font-size: 1.8em;
+    }
+  }
