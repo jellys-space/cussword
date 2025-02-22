@@ -1,34 +1,28 @@
-/* Base styles for the entire page */
+/* Global dark theme for the entire page */
 body {
   margin: 0;
-  height: 100vh;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0;          /* Light text for readability */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #2c3e50, #4ca1af);
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #fff;
-}
-
-/* Container for centering content */
-.container {
+  min-height: 100vh;
   text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Title styling */
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 0.5em;
-  color: #ddd;
+  color: #ffffff;
 }
 
 /* Styling for the daily word */
 .word {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
   color: #00aaff;
   text-transform: uppercase;
